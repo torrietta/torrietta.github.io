@@ -2,182 +2,182 @@
  * 
  */
 let quiz1 = [{
-        "text": "ALU Rwanda is in Kigali. What is the truth value of the above statement?",
+        "text":"2 + 3 = ?" ,
         "answers": [{
-                "label": true,
-                "value": true
+                "label": 5,
+                "value": 5
             },
             {
-                "label": false,
-                "value": false
+                "label": 6,
+                "value": 6
             },
             {
-                "label": "Statement is not a proposition so it has no truth value",
-                "value": "Not proposition"
+                "label": 1,
+                "value": 1
             }
         ],
-        "answer": "true"
+        "answer": "5"
     },
     {
-        "text": "Can Mary come with you? Is this sentence a proposition?",
+        "text": " 4 + 6 = ?",
         "answers": [{
-                "label": true,
-                "value": true
+                "label": 9,
+                "value": 9
             },
             {
-                "label": false,
-                "value": false
+                "label": 10,
+                "value": 10
             },
         ],
-        "answer": "false"
+        "answer": "10"
     },
     {
-        "text": "8+1=4 or 3+2=5. Is this sentence a proposition?",
+        "text": " ? + 6 = 8?",
         "answers": [{
-                "label": true,
-                "value": true
+                "label": 3,
+                "value": 3
             },
             {
-                "label": false,
-                "value": false
+                "label": 2,
+                "value": 2
             },
         ],
-        "answer": "true"
+        "answer": "2"
     },
     {
-        "text": "What is the negation of the proposition: “8 is negative.”",
+        "text": "9 + ? = 16",
         "answers": [{
-                "label": "8 is positive",
-                "value": "8 is positive"
+                "label": 8,
+                "value": 8
             },
             {
-                "label": "8 is nonnegative",
-                "value": "8 is nonnegative"
+                "label": 9,
+                "value": 9
             },
             {
-                "label": "8 is negative",
-                "value": "8 is negative"
+                "label": 7,
+                "value": 7
             }
         ],
-        answer: "8 is nonnegative"
+        answer: "7"
     },
     {
-        "text": "The following compound proposition indicates which law of logic: p ∧ q ≡ q ∧ p",
+        "text": "7 + 9 = ?",
         "answers": [{
-                "label": "Associative laws",
-                "value": "Associative laws"
+                "label": 18,
+                "value": 18
             },
             {
-                "label": "Distributive laws",
-                "value": "Distributive laws"
+                "label": 20,
+                "value": 20
             },
             {
-                "label": "Commutative laws correct",
-                "value": "Commutative laws correct"
+                "label": 16,
+                "value": 16
             },
             {
-                "label": "Idempotent laws",
-                "value": "Idempotent laws"
+                "label": 15,
+                "value": 15
             }
         ],
-        answer: "Associative laws"
+        answer: 16
     }
 ]
 
 let quiz2 = [{
-        "text": "Determine whether this pair of sets are equal: {2,6,6,6,9,9,9,9,9} , {9,6,2}.",
+        "text": "52 + ? = 100",
         "answers": [{
-                "label": "Yes, they are equal",
-                "value": "Yes, they are equal"
+                "label": 48,
+                "value": 48
             },
             {
-                "label": "No, they are not",
-                "value": "No, they are not"
+                "label": 50,
+                "value": 50
             }
         ],
-        "answer": "Yes, they are equal"
+        "answer": 48
     },
     {
-        "text": "Determine whether this pair of sets are equal: {{7}} , {7, {7}}.",
+        "text": "? + 477 = 600",
         "answers": [{
-                "label": "Yes, they are equal",
-                "value": "Yes, they are equal"
+                "label": 33,
+                "value": 33
             },
             {
-                "label": "No, they are not correct",
-                "value": "No, they are not correct"
+                "label": 133,
+                "value": 133
             },
         ],
-        "answer": "Yes, they are equal"
+        "answer": 133
     },
     {
-        "text": "Determine whether this pair of sets are equal: ∅, {∅}",
+        "text": "80 + 90 = ?",
         "answers": [{
-                "label": "Yes, they are equal",
-                "value": "Yes, they are equal"
+                "label": 170,
+                "value": 170
             },
             {
-                "label": "No, they are not",
-                "value": "No, they are not"
+                "label": 150,
+                "value": 150
             },
         ],
-        "answer": "No, they are not"
+        "answer": 150
     },
     {
-        "text": "i) Z ii) W",
+        "text": "25 + ? = 70",
         "answers": [{
-                "label": "the first is a subset of the second",
-                "value": "the first is a subset of the second"
+                "label": 55,
+                "value": 55
             },
             {
-                "label": "the second is a subset of the first correct",
-                "value": "the second is a subset of the first correct"
+                "label": 35,
+                "value": 35
             },
             {
-                "label": "neither is a subset of the other",
-                "value": "neither is a subset of the other"
+                "label": 45,
+                "value": 45
             }
         ],
-        "answer": "the second is a subset of the first correct"
+        "answer": 45
     },
     {
-        "text": "The following compound proposition indicates which law of logic: p ∧ q ≡ q ∧ p",
+        "text": " ? + 45 = 302",
         "answers": [{
-                "label": "Associative laws",
-                "value": "Associative laws"
+                "label": 257,
+                "value": 257
             },
             {
-                "label": "Distributive laws",
-                "value": "Distributive laws"
+                "label": 207,
+                "value": 207
             },
             {
-                "label": "Commutative laws correct",
-                "value": "Commutative laws correct"
+                "label": 157,
+                "value": 157
             },
             {
-                "label": "Idempotent laws",
-                "value": "Idempotent laws"
+                "label": 247,
+                "value": 247
             }
         ],
-        "answer": "Associative laws"
+        "answer": 257
     }
 ];
 
 let quiz3 = [{
-        "text": "What is the cardinality of this set below?  {v, v} Enter your numeric answer below:",
-        "answer": "1"
+        "text": "Katheline has 5 friends and each of his friends has 7 friends. How many friends do katherine have in total?",
+        "answer": 35
     },
     {
-        "text": "What is the cardinality of this set below? {b, {b}, {b, {b}}} Enter your numeric answer below:",
-        "answer": "4"
+        "text": "Ayumi puts 3 packets of ketchup on her tater tots. Each packet has 8 milliliters of ketchup. How many milliliters of ketchup does Ayumi put on her tater tots?",
+        "answer": 24
     },
     {
-        "text": "a. For all sets A, A ∪ ∅ = _________________________",
-        "answer": "A"
+        "text": "cows are playing soccer. green team is playing the pink team, 4 are on the green team. how many cows are in the pink team to make a total of 8 cows",
+        "answer": 4
     },
     {
-        "text": "What is the name of you facilitator",
-        "answer": "Obed Nsiah"
+        "text": ".A bird laid 6 eggs in total. how many eggs remaining if 4 eggs have hatched?",
+        "answer": 2
     }
 ]
 /**
@@ -299,10 +299,19 @@ function createQuestions1() {
             question
         );
     }
+
+    
 }
 
 function checkQuestions1() {
     document.getElementById("results").innerText = `${checkQuestion(quiz1)} out of ${quiz1.length}`;
+
+    var x = document.getElementById("show");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
 }
 /**
  * For quiz 2
@@ -319,6 +328,14 @@ function createQuestions2() {
 
 function checkQuestions2() {
     document.getElementById("results").innerText = `${checkQuestion(quiz2)} out of ${quiz2.length}`;
+
+    
+    var x = document.getElementById("show");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
 
 }
 /**
