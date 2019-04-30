@@ -164,6 +164,26 @@ section .back-image {
     padding-right: 4rem;
 }
 
+.search-bar {
+    height: 40px;
+    width: 100%;
+    padding: 10px 10px;
+    margin: 10px 10px;
+    border-radius: 20px;
+    border: 0px;
+}
+
+.btn-search {
+    background-color: rgb(211, 218, 238);
+    border: 1px solid #1B2130;
+    width: 30%;
+    height: 30px;
+    padding: 5px 10px;
+    margin: 10px 160px;
+    border-radius: 40px;
+    border: 0px;
+}
+
 /* 
   quiz related css
  */
