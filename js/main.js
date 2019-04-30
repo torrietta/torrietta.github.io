@@ -121,7 +121,7 @@ let quiz2 = [{
                 "value": 150
             },
         ],
-        "answer": 150
+        "answer": 170
     },
     {
         "text": "25 + ? = 70",
