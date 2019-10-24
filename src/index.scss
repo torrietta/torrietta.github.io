@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400&display=swap');
+
+@import "./theme";
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0px;
+  padding: 0px;
+  background: $body-back;
+  font-size: 13px;
+}
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+code {
+  font-family: 'Poppins', sans-serif;
+}
+
+
+// Theme setup
+// colors
+@each $key,
+$val in $theme-colors {
+  .txt-#{$key} {
+    color: #{$val};
+  }
+}
+
+// 
+// 
+.display {
+  &-1 {
+    font-weight: lighter;
+    font-size: 23px;
+  }
+  &-2 {
+    font-weight: lighter;
+    font-size: 18px;
+  }
+}
+
+// 
+.txt-center{
+  text-align: center;
+}
+
+// 
+// 
+// Spacer
+.spacer {
+
+  // 
+  &-v {
+    display: block;
+
+    &-md {
+      height: 2rem;
+    }
+
+    &-sm {
+      height: 1rem;
+    }
+  }
+
+  // 
+  &-h {
+    &-md {}
+
+    &-sm {}
+  }
+}
+
+
+// 
+// 
+// customization of buttons
+// 
+// 
+a {
+  text-decoration: none;
+}
+
+.btn {
+
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 2px;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    transition: 500ms ease;
+  }
+
+
+
+  // Size
+  &.btn-sm {
+    padding: 0.4rem 1.3rem;
+  }
+
+  &.btn-md {
+    padding: 0.6rem 2rem;
+
+    .mdi {
+      margin-right: 6px;
+
+      * {
+        font-size: 20px;
+      }
+    }
+  }
+
+  // themesecolors
+  &.btn-primary {
+    color: $light;
+    background: $primary;
+    border-width: 0px;
+
+    &:hover {
+      background: darken($primary, 15%);
+    }
+  }
+
+  &.btn-light {
+    color: $primary;
+    background: $light;
+    border-width: 0px;
+
+    &:hover {
+      background: #fafafa;
+    }
+  }
+}
+
+// 
+// 
+// Inputs
+.input {
+  &-grp {
+    padding: 0.5rem 0.2rem;
+    margin-bottom: 10px;
+    margin-top: 5px;
+  }
+
+  &-lbl{
+    display: block;
+    color: lighten(black, 10%);
+    line-break: 14px;
+  }
+  &-box {
+    display: block;
+    padding: 0.6rem 0.5rem;
+    border-width: 0px;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-color: lighten(black, 15%);
+    transition: 500ms ease;
+    min-width: 250px;
+    width: 100%;
+
+    &::placeholder{
+      opacity: 0.3;
+      // font-style: italic;
+    }
+    &:hover {
+      opacity: 0.9;
+    }
+
+    &:focus {
+      outline: none;
+      border-color: $primary;
+    }
+  }
+}
