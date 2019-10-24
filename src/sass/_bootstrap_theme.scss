@@ -1,0 +1,425 @@
+// 
+// Color system
+// 
+// @import './../../../node_modules/bootstrap/scss/variables';
+
+$white:    #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black:    #2A2E43 !default;
+// changed some colors
+$blue:     #665EFF !default;
+// added blue-1
+$blue-1:  #3497FD !default;
+$indigo:  #6610f2 !default;
+$purple:  #C840E9 !default;
+$pink:    #FF4F9A !default;
+$red:     #FF6868 !default;
+$orange:  #FF9057 !default;
+$yellow:  #FFB900 !default;
+$green:   #00BE19 !default;
+$teal:    #20c997 !default;
+$cyan:    #3ACCE1 !default;
+// additional cyan colors
+$cyan-10: #EAF9FB;
+$cyan-20: #D7F5F9;
+$cyan-5:  #F4FCFD;
+
+$blue-10: #EFEEFF;
+$blue-20: #E0DFFF;
+$blue-5:  #F7F7FF;
+
+
+// additional colors
+$shadow-color: #78849E;
+$card-border-color: lighten(#78849E, 40%);
+
+
+$theme-colors: 
+(
+    "primary":  $blue,
+    "danger":   $red,
+    "cyan-10":  $cyan-10,
+    "cyan-5":   $cyan-5,
+    "pink":     $pink
+);
+
+$primary:     $blue;
+// Changed this
+$secondary:   $blue-1 !default;
+$success:     $green !default;
+$info:        $cyan !default;
+$warning:     $yellow !default;
+$danger:      $red !default;
+$light:       $gray-100 !default;
+$dark:        #2A2E43 !default;
+
+// 
+// 
+// Set a specific jump point for requesting color jumps
+$theme-color-interval: 8% !default;
+
+// 
+// The yiq lightness value that determines when the lightness of color changes from "dark" to "light". Acceptable values are between 0 and 255.
+// Don't change this
+// this is perfect
+$yiq-contrasted-threshold: 190 !default;
+
+// // Customize the light and dark text colors for use in our YIQ color contrast function.
+// $yiq-text-dark:             #454F63 !default; // changed from $gray-900
+// $yiq-text-light:            $white !default;
+
+// // Quickly modify global styling by enabling or disabling optional features.
+
+$enable-caret:          false !default;
+$enable-rounded:        true !default;
+$enable-shadows:        true !default;
+$enable-gradients:      false !default;
+$enable-transitions:    true !default;
+$enable-hover-media-query: false !default; // Deprecated, no longer affects any compiled CSS
+$enable-grid-classes:      true !default;
+$enable-print-styles:      true !default;
+
+
+// // Body
+// //
+// // Settings for the `<body>` element.
+
+// Replaced for dev purposes #FCFCFE
+$body-bg:     $blue-5 !default; //changed from white
+// $body-bg:     #ffffff !default; //changed from white
+$body-color:  #454F63 !default; // changed from $gray-900
+
+// // Links
+// //
+// // Style anchor elements.
+$link-hover-decoration:    unset !default;
+
+// 
+// Grid columns
+// Set the number of columns and specify the width of the gutters.
+
+$grid-columns:      16 !default; //changed to 16
+$grid-gutter-width: 15px !default; // from 30px;
+
+// 
+// border-radiuses
+// 
+$border-radius:      .25rem !default; //Reduce this to be like 3px
+$border-radius-lg:   $border-radius + 0.3rem !default;
+$border-radius-sm:   $border-radius + 0.6rem !default;
+
+// 
+// 
+// Shadows
+//
+
+$z-depth-1: 0 1px 3px rgba($shadow-color, 0.05), 0 1px 2px rgba($shadow-color, 0.1);
+$z-depth-2: 0 3px 6px rgba($shadow-color, 0.1), 0 3px 6px rgba($shadow-color, 0.15);
+$z-depth-3: 0 10px 20px rgba($shadow-color, 0.15), 0 6px 6px rgba($shadow-color, 0.2);
+$z-depth-4: 0 14px 28px rgba($shadow-color, 0.2), 0 10px 10px rgba($shadow-color, 0.25);
+$z-depth-5: 0 19px 38px rgba($shadow-color, 0.25), 0 15px 12px rgba($shadow-color, 0.3);
+
+
+// // 
+// // active classes
+// // 
+// $component-active-color:      $white !default;
+// $component-active-bg:         theme-color("primary") !default;
+
+
+// Definedby me
+$nav-active-before-color: linear-gradient(to right, $blue 45%, $blue-1 35%, $cyan 20%);
+@mixin nav-active-before-mixin($color) {
+    &::before{
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        height: 3px;
+        background: $color;
+        transition: 300ms ease all;
+    }
+}
+@mixin nav-active-before {
+    @include nav-active-before-mixin($nav-active-before-color);
+}
+
+// Fonts
+//
+// Font, line-height, and color for body text, headings, and more.
+
+// stylelint-disable value-keyword-case
+// $font-family-sans-serif:      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+// $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-sans-serif:      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+
+
+$font-size-base: 0.95rem; // changed from 1rem to 14px
+
+// 
+// Buttons + Forms
+// Made them big because default buttons are radial
+// 
+$btn-border-radius: 50rem !default;
+$btn-border-radius-lg: 50rem !default;
+$btn-border-radius-sm: 50rem !default;
+
+
+// Buttons + Forms
+//
+// Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
+$btn-box-shadow:              unset !default;
+$btn-active-box-shadow:       unset !default;
+$input-btn-focus-box-shadow:  unset !default;
+$btn-focus-box-shadow: unset !important; // Removes the focus shadow
+
+
+$input-padding-y: 0.6rem; // will affect both inputs and buttons
+$btn-padding-y: .475rem; // will affect both inputs and buttons
+// width of the buttons
+$btn-border-width: 2px; //changed from 1px
+
+// 
+// Only forms and inputs
+// Forms
+// 
+// 
+$input-placeholder-color:               $gray-400 !default;
+
+$input-bg:               $white !default;
+$input-focus-bg:         $cyan-5 !default; // should change to transparent cyan
+$input-border-width:     2px; //Because we put styles on the input group
+
+$input-color:                           $gray-700 !default;
+$input-border-color:                    lighten($shadow-color, 20%) !default; // from gray-400
+
+$input-box-shadow:            unset !default;
+$input-focus-box-shadow:      unset!important; // changed this
+$input-focus-border-color:              lighten($primary, 10%) !default;
+
+
+$input-border-radius:                   0.1rem !default;
+$input-border-radius-lg:                0.2rem !default;
+$input-border-radius-sm:                0.15rem !default;
+
+$input-transition:                      border-color .15s ease-in-out, background-color .3s ease-in-out, box-shadow .15s ease-in-out !default;
+
+// 
+// Input Add ons
+// 
+// $input-group-addon-color:               $primary !default;
+$input-group-addon-bg:                  $cyan-5 !default;
+$input-group-addon-border-color:        $cyan-10 !default;
+
+
+// Form validation
+// $form-feedback-valid-color:         theme-color("pink") !default;
+// $form-feedback-invalid-color:       theme-color("danger") !default;
+
+
+
+
+// 
+// progress bars
+// 
+$progress-border-radius:    20em;
+$progress-box-shadow:       unset!default;
+
+
+
+// List group
+$list-group-border-color:           rgba($black, .025) !default;
+$list-group-border-width:           2px !default;
+
+$list-group-hover-bg:               $cyan-5 !default;
+
+$list-group-active-color:           $primary !default;
+$list-group-active-bg:              $cyan-10 !default;
+$list-group-active-border-color:    $cyan-10 !default;
+
+$list-group-action-active-bg:       $cyan-5 !default;
+
+
+// 
+// Tooltip
+// 
+
+@mixin tooltip-theme-pep($color) {
+    .tooltip-inner { background-color: $color!important; }
+    &.bs-tooltip-top { .arrow::before { border-top-color: $color!important;} }   
+    &.bs-tooltip-bottom { .arrow::before { border-bottom-color: $color!important;} }       
+    &.bs-tooltip-right { .arrow::before { border-right-color: $color!important;} }    
+    &.bs-tooltip-left { .arrow::before { border-left-color: $color!important;} }    
+}
+
+// 
+// Popovers
+// 
+$popover-header-bg:                 $cyan-10 !default;
+$popover-header-color:              $primary !default;
+$popover-border-radius:             0.1rem !default;
+$popover-border-color:              transparent !default;
+
+
+// 
+// Input controls
+// 
+// For select
+// 
+$custom-select-box-shadow:           unset;
+$custom-select-focus-box-shadow :    unset;
+
+
+// For checkbox and radio button
+$custom-control-indicator-focus-box-shadow:     unset;
+$custom-control-indicator-box-shadow:           unset;
+$custom-control-indicator-focus-box-shadow:     unset;
+$custom-control-indicator-active-box-shadow:    unset;
+
+$custom-control-indicator-checked-box-shadow:   unset;
+$custom-control-indicator-bg-size:   60% 60% !default;
+$custom-control-indicator-size:      1.2rem;
+$custom-control-indicator-bg:        $gray-100 !default;
+
+
+
+// 
+// custom range
+// 
+$custom-range-track-box-shadow:     unset;
+
+$custom-range-thumb-box-shadow:             unset!default;
+$custom-range-thumb-focus-box-shadow:       unset!default;
+$custom-range-thumb-focus-box-shadow-width: 0px !default; // For focus box shadow issue in IE/Edge
+
+// 
+// Cards
+// 
+$card-spacer-x:                     .5rem !default;
+$card-spacer-y:                     .3rem !default;
+// $card-border-width:                 $border-width !default;
+$card-border-color:                 rgba($black, .025) !default;
+$card-cap-bg:                       rgba($cyan, .05) !default;
+
+// 
+// Pagination
+// 
+$pagination-padding-y:              .65rem !default;
+$pagination-padding-x:              .85rem !default;
+
+$pagination-bg:                     $cyan-5 !default;
+// $pagination-border-width:           $border-width !default;
+$pagination-border-color:           $gray-100 !default;
+
+$pagination-hover-border-color:     $gray-100 !default;
+$pagination-hover-bg:               $cyan-10 !default;
+
+
+
+
+// Dropdowns
+//
+// Dropdown menu container and contents.
+$dropdown-min-width:                13rem !default;
+
+$dropdown-divider-bg:               $gray-100 !default;
+$dropdown-padding-y:                .85rem !default;
+
+$dropdown-link-hover-bg:            $cyan-5 !default;
+$dropdown-item-padding-y:           .5rem !default;
+$dropdown-box-shadow:               $z-depth-2 !default;
+$dropdown-border-color:             rgba($cyan, .15) !default;
+
+$dropdown-header-color:             $gray-400 !default;
+
+
+// 
+// Alert
+// 
+$alert-border-width:                1px !default;
+$alert-bg-level:                    -12.2 !default;
+$alert-border-level:                -5 !default;
+$alert-color-level:                 0 !default;
+
+
+// 
+// Carousel
+// 
+$carousel-control-color:            $shadow-color !default;
+$carousel-control-width:            10% !default;
+
+$carousel-transition:               transform 400ms ease; // Define transform transition first if using multiple transitions (e.g., `transform 2s ease, opacity .5s ease-out`)
+
+// $carousel-indicator-active-bg:      $warning !default;
+$carousel-indicator-active-bg:      $primary !default;
+
+
+
+
+
+
+// 
+// Other defined mixins
+// 
+@mixin pep-background-img {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@mixin pep-overlay ($position) {
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: inherit;
+    position: $position;
+}
+
+
+@mixin pep-overlay-component($color) {
+    @include pep-overlay(absolute);
+    background: $color;
+    ~*{
+        position: relative;
+    }
+}
+
+
+@mixin pep-overlay-fixed-component($color) {
+    @include pep-overlay(fixed);
+    background: $color;
+}
+
+
+// 
+// //
+// Z-indexes not changed
+$zindex-dropdown:                   1000 !default;
+$zindex-sticky:                     1020 !default;
+$zindex-fixed:                      1030 !default;
+$zindex-modal-backdrop:             1040 !default;
+$zindex-modal:                      1050 !default;
+$zindex-popover:                    1060 !default;
+$zindex-tooltip:                    1070 !default;
+// additional
+$zindex-sidebar:                      1031 !default;
+$zindex-router-loader:                1055 !default; // Just above the modals
+
+//  //  //
+// //
+//  New
+// PePlaace declared variables
+// 
+$main-fixed-menu-height:        50px; 
+

@@ -1,0 +1,34 @@
+// 
+// Import custom theme 
+// 
+@import "./sass/bootstrap_theme.scss";
+
+// Import bootstrap
+// 
+@import "./../node_modules/bootstrap/scss/bootstrap-reboot.scss";
+@import "./../node_modules/bootstrap/scss/bootstrap-grid.scss";
+@import "./../node_modules/bootstrap/scss/bootstrap.scss";
+// right after bootstrap
+@import "./sass/buttons";
+@import "./sass/scrollbars";
+@import "./sass/shadows";
+@import "./sass/extra";
+@import "./sass/tags";
+
+// created on react this proj
+@import "./sass/inputs";
+
+@import "./sass/input_groups_forms";
+// 
+// Import additional Bootstrap elements
+// 
+@import "./sass/scrollbars";
+
+@import "./sass/mdi";
+
+/* mdi icons */
+// @import "./assets/scss/extensions/materialdesignicons.css";
+
+body {
+    color: $body-color;
+}
