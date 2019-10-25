@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap');
 /* stylelint-disable at-rule-empty-line-before,at-rule-name-space-after,at-rule-no-unknown */
 @import './colors';
 
@@ -8,7 +9,7 @@
 @html-selector: html;
 
 // -------- Colors -----------
-@primary-color: @blue-6;
+@primary-color: #52E3B8;
 @info-color: @blue-6;
 @success-color: @green-6;
 @processing-color: @blue-6;
@@ -25,9 +26,7 @@
 @primary-2: color(~`colorPalette('@{primary-color}', 2) `); // replace tint(@primary-color, 80%)
 @primary-3: color(~`colorPalette('@{primary-color}', 3) `); // unused
 @primary-4: color(~`colorPalette('@{primary-color}', 4) `); // unused
-@primary-5: color(
-  ~`colorPalette('@{primary-color}', 5) `
-); // color used to control the text color in many active and hover states, replace tint(@primary-color, 20%)
+@primary-5: color(~`colorPalette('@{primary-color}', 5) `); // color used to control the text color in many active and hover states, replace tint(@primary-color, 20%)
 @primary-6: @primary-color; // color used to control the text color of active buttons, don't use, use @primary-color
 @primary-7: color(~`colorPalette('@{primary-color}', 7) `); // replace shade(@primary-color, 5%)
 @primary-8: color(~`colorPalette('@{primary-color}', 8) `); // unused
@@ -41,10 +40,14 @@
 @body-background: #fff;
 // Base background color for most components
 @component-background: #fff;
-@font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB',
-  'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Color Emoji',
-  'Segoe UI Emoji', 'Segoe UI Symbol';
-@code-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+// @font-family: 'Poppins', sans-serif, 'Apple Color Emoji',
+//   'Segoe UI Emoji', 'Segoe UI Symbol';
+@font-family: 'Poppins', sans-serif;
+// @font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB',
+// 'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Color Emoji',
+// 'Segoe UI Emoji', 'Segoe UI Symbol';
+@code-family: 'Poppins', sans-serif;
+// @code-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
 @text-color: fade(@black, 65%);
 @text-color-secondary: fade(@black, 45%);
 @text-color-inverse: @white;
@@ -70,7 +73,7 @@
 
 // vertical paddings
 @padding-lg: 24px; // containers
-@padding-md: 16px; // small containers and buttons
+@padding-md: 36px; // small containers and buttons
 @padding-sm: 12px; // Form controls and items
 @padding-xs: 8px; // small items
 
@@ -170,9 +173,9 @@
 @btn-padding-lg: @btn-padding-base;
 @btn-padding-sm: 0 @padding-xs - 1px;
 
-@btn-height-base: 32px;
-@btn-height-lg: 40px;
-@btn-height-sm: 24px;
+@btn-height-base: 40px;
+@btn-height-lg: 48px;
+@btn-height-sm: 32px;
 
 @btn-circle-size: @btn-height-base;
 @btn-circle-size-lg: @btn-height-lg;
@@ -308,9 +311,9 @@
 
 // Input
 // ---
-@input-height-base: 32px;
-@input-height-lg: 40px;
-@input-height-sm: 24px;
+@input-height-base: 42px;
+@input-height-lg: 52px;
+@input-height-sm: 34px;
 @input-padding-horizontal: @control-padding-horizontal - 1px;
 @input-padding-horizontal-base: @input-padding-horizontal;
 @input-padding-horizontal-sm: @control-padding-horizontal-sm - 1px;
@@ -321,8 +324,8 @@
 @input-placeholder-color: hsv(0, 0, 75%);
 @input-color: @text-color;
 @input-border-color: @border-color-base;
-@input-bg: @component-background;
-@input-number-handler-active-bg: #f4f4f4;
+@input-bg: fade(@component-background, 80%);
+@input-number-handler-active-bg: #f4f4f479;
 @input-number-handler-hover-bg: @primary-5;
 @input-number-handler-bg: @component-background;
 @input-number-handler-border-color: @border-color-base;

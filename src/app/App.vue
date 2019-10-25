@@ -8,10 +8,11 @@
 
 
 <script lang="ts">
-import MainNav from "./shared/components/MainNav.vue";
-import Vue from "vue";
+import Vue from 'vue';
+import MainNav from './shared/components/MainNav.vue';
+
 export default Vue.extend({
-  components: { MainNav }
+  components: { MainNav },
 });
 </script>
 

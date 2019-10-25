@@ -13,12 +13,12 @@
 </template>
 
 <script lang="ts">
-import Vue from "vue";
-import MainFooter from "./../shared/components/MainFooter.vue";
-import MainNav from "./../shared/components/MainNav.vue";
+import Vue from 'vue';
+import MainFooter from '../shared/components/MainFooter.vue';
+import MainNav from '../shared/components/MainNav.vue';
 
 export default Vue.extend({
-  components: { MainNav, MainFooter }
+  components: { MainNav, MainFooter },
 });
 </script>
 
