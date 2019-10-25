@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="110" height="37" viewBox="0 0 110 37">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-Logo);
+      }
+
+      .cls-2, .cls-4 {
+        fill: #ffffffe8;
+      }
+
+      .cls-3, .cls-5 {
+        fill: #52e3b8;
+      }
+
+      .cls-3 {
+        font-size: 20px;
+        font-family: Raleway-Bold, Raleway;
+        font-weight: 700;
+      }
+
+      .cls-4 {
+        font-size: 8px;
+        font-family: Raleway-Regular, Raleway;
+      }
+    </style>
+    <clipPath id="clip-Logo">
+      <rect width="110" height="37"/>
+    </clipPath>
+  </defs>
+  <g id="Logo" class="cls-1">
+    <g id="Group_3" data-name="Group 3" transform="translate(0.989 1)">
+      <path id="ic_import_contacts_24px" class="cls-2" d="M42.8,5.545A24.67,24.67,0,0,0,35.483,4.5c-4.075,0-8.464.836-11.494,3.135C20.958,5.336,16.57,4.5,12.494,4.5S4.03,5.336,1,7.635V38.252A1.124,1.124,0,0,0,2.045,39.3c.209,0,.313-.1.522-.1a25.508,25.508,0,0,1,9.927-2.3c4.075,0,8.464.836,11.494,3.135a25.173,25.173,0,0,1,11.494-3.135,21.271,21.271,0,0,1,9.927,2.194.942.942,0,0,0,.522.1,1.124,1.124,0,0,0,1.045-1.045V7.635A14.254,14.254,0,0,0,42.8,5.545Zm0,28.213a24.285,24.285,0,0,0-7.315-1.045,25.173,25.173,0,0,0-11.494,3.135V11.815A25.173,25.173,0,0,1,35.483,8.68,24.285,24.285,0,0,1,42.8,9.725Z" transform="translate(-0.989 -4.5)"/>
+      <g id="Group_2" data-name="Group 2" transform="translate(-5 -5)">
+        <text id="Maths" class="cls-3" transform="translate(55 26)"><tspan x="0" y="0">Maths</tspan></text>
+        <text id="Spectra" class="cls-4" transform="translate(56 36)"><tspan x="0" y="0">Spectra</tspan></text>
+      </g>
+      <path id="ic_import_contacts_24px-2" data-name="ic_import_contacts_24px" class="cls-5" d="M17.182,6.554C15.049,5.048,11.959,4.5,9.091,4.5S3.133,5.048,1,6.554V26.618a.765.765,0,0,0,.736.685c.147,0,.221-.068.368-.068a19.067,19.067,0,0,1,6.988-1.507c2.869,0,5.958.548,8.091,2.054Z" transform="translate(2.212 1.5)"/>
+    </g>
+  </g>
+</svg>

@@ -35,7 +35,10 @@ Vue.use(Button);
 Vue.use(Form);
 Vue.use(Input);
 Vue.use(Icon);
-Vue.use(Checkbox)
+Vue.use(Checkbox);
+import { Layout, Menu} from "ant-design-vue";
+Vue.use(Layout);
+Vue.use(Menu)
 /**
  * Rouuter
  */

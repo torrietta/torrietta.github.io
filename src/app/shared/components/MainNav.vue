@@ -1,41 +1,46 @@
 <template>
-  <div id="nav">
-    <!-- main nav header -->
-    <header class="header-h header-h-unscrolled">
-      <div class="Nav-H">
-        <div class="nav-logo">
-          <img src="/assets/logo.svg" alt />
-        </div>
-        <div class="Nav-Nav">
-          <div>
-            <div class="nav--links">
-              <ul>
-                <li class="active">
-                  <a class="active" href="./index.html">Home</a>
-                </li>
-                <li :v-if="forOut=='true'">
-                  <a href="./subjects.html">Content</a>
-                </li>
-                <li>
-                  <router-link to="/contact">
-                    <a class="active">Contact</a>
-                  </router-link>
-                </li>
-                <li :v-if="forOut !='true'">
-                  <div>
-                    <img />
-                    <a href="#">Account</a>
-                  </div>
-                </li>
-              </ul>
+  <div id="MainNav">
+    <!--  -->
+    <!--  -->
+    <div class="MainNav-Logo">
+      <router-link to="/subjects">
+        <img src="/assets/logo_dark.svg" alt="Logo" />
+      </router-link>
+    </div>
+    <!--  -->
+    <!--  -->
+    <a-menu
+      theme="dark"
+      mode="horizontal"
+      :defaultSelectedKeys="['2']"
+      :style="{ lineHeight: '64px' }"
+    >
+      <a-menu-item :v-if="forOut !='true'" key="1">Home</a-menu-item>
+      <a-menu-item key="2">
+        <router-link to="/subjects">Subjects</router-link>
+      </a-menu-item>
+      <a-menu-item :v-if="forOut !='true'" key="3">
+        <router-link to="/contact">Contact</router-link>
+      </a-menu-item>
+      <!--  -->
+      <a-sub-menu key="sub2">
+        <span slot="title">
+          <span class="Menu-Account">
+            <img class="Acc-Img" src="/assets/levels/undraw_reading_0re1.svg" />
+            <div class="Acc-Info">
+              <span class="Acc-Names">Teta Orrieta</span>
+              <span>
+                <span class="Acc-Level">Developing</span>
+              </span>
             </div>
-            <!-- <div class="nav--profile">
-                        <img src="" alt="">
-            </div>-->
-          </div>
-        </div>
-      </div>
-    </header>
+          </span>
+        </span>
+        <a-menu-item key="5">
+          <router-link to="/out">Logout</router-link>
+        </a-menu-item>
+      </a-sub-menu>
+    </a-menu>
+    <!--  -->
   </div>
 </template>
 
@@ -48,71 +53,42 @@ export default Vue.extend({
 </script>
 
 <style lang="less" scoped>
-/* Nav-H */
-
-.Nav-H {
-  display: table;
-  width: 100%;
-}
-
-.Nav-H > * {
-  display: table-cell;
-  vertical-align: middle;
-  width: 50%;
-}
-
-.Nav-H .Nav-Nav {
-  text-align: right;
-}
-
-.Nav-H .Nav-Nav ul {
-  list-style-type: none;
+.Menu-Account {
   display: flex;
+  flex-direction: row;
+  align-content: center;
   align-items: center;
 }
-
-.Nav-H .Nav-Nav ul > * {
-  flex-grow: 1;
+.Acc {
+  &-Img {
+    border-radius: 30px;
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+  }
+  &-Info {
+    padding: 10px;
+  }
+  &-Names {
+    font-weight: bold;
+    display: block;
+    line-height: 1.2rem;
+  }
+  &-Level {
+    color: aquamarine;
+    font-size: 90%;
+    display: block;
+    line-height: 1.2rem;
+  }
 }
-
-/* links */
-.Nav-Nav ul {
-  margin: 0px;
+#MainNav {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
 }
-
-.Nav-Nav ul * {
-  text-transform: uppercase;
-}
-
-.nav--links li {
-  position: relative;
-}
-
-.nav--links li a {
-  text-decoration: none;
-  color: #1b2130;
-  position: relative;
-  display: block;
-  text-align: center;
-  transition: 300ms ease;
-}
-
-.nav--links li.active a {
-  font-weight: bold;
-  color: #52e3b8;
-}
-
-.nav--links li a:hover {
-  background: whitesmoke;
-}
-
-.nav--links li.active::after {
-  position: absolute;
-  content: "";
-  bottom: 0px;
-  height: 4px;
-  background: #52e3b8;
-  width: 100%;
-  left: 0px;
+.MainNav-Logo {
+  img {
+    height: 35px;
+  }
 }
 </style>
