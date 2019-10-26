@@ -65,8 +65,8 @@ export default new Router({
       component: AppOut,
       children: [
         {
-          path: '/',
-          name: '/',
+          path: '',
+          name: '',
           component: MainHomeOutPage,
         },
         {
@@ -90,7 +90,7 @@ export default new Router({
      *
      */
     {
-      path: '/',
+      path: '',
       name: 'AppIn',
       component: AppIn,
       children: [
