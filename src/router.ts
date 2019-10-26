@@ -22,6 +22,9 @@ import SignupPage from './app/views/HomeOut/Signup.vue';
  * In
  */
 import QuizPage from './app/views/Quiz/MainQuiz.vue';
+import Quiz2 from './app/views/Quiz/Quiz2.vue';
+import Quiz3 from './app/views/Quiz/Quiz3.vue';
+
 import SubjectPage from './app/views/Subject.vue';
 import SubjectsPage from './app/views/Subjects.vue';
 import ContactPage from './app/views/Contact.vue';
@@ -36,9 +39,10 @@ Vue.use(Form);
 Vue.use(Input);
 Vue.use(Icon);
 Vue.use(Checkbox);
-import { Layout, Menu} from "ant-design-vue";
+import { Layout, Menu,Radio} from "ant-design-vue";
 Vue.use(Layout);
-Vue.use(Menu)
+Vue.use(Menu);
+Vue.use(Radio);
 /**
  * Rouuter
  */
@@ -75,6 +79,11 @@ export default new Router({
           name: 'signup',
           component: SignupPage,
         },
+        {
+          path: 'contact',
+          name: 'contact',
+          component: ContactPage,
+        },
       ],
     },
     /**
@@ -96,14 +105,19 @@ export default new Router({
           component: SubjectPage,
         },
         {
-          path: 'quiz/:id',
+          path: 'quiz/1',
           name: 'QuizPage',
           component: QuizPage,
         },
         {
-          path: 'contact',
-          name: 'contact',
-          component: ContactPage,
+          path: 'quiz/2',
+          name: 'QuizPage',
+          component: Quiz2,
+        },
+        {
+          path: 'quiz/3',
+          name: 'QuizPage',
+          component: Quiz3,
         },
         {
           path: '',

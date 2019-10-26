@@ -5,21 +5,17 @@
         <a-row>
           <a-col :lg="6" :sm="24" :xs="24">
             <div class="footer-center">
-              <h2 class="Txt-Primary">Ant Design</h2>
+              <h2 class="Txt-Primary">Curriculumn</h2>
               <div>
-                <a target="_blank " href="https://github.com/ant-design/ant-design">GitHub</a>
+                <a target="_blank " href="https://github.com/ant-design/ant-design">Feedback</a>
               </div>
               <div>
-                <a href="http://pro.ant.design">Ant Design Pro</a>
+                <a href="http://pro.ant.design">Help Develop</a>
               </div>
               <div>
-                <a href="http://mobile.ant.design">Ant Design Mobile</a>
+                <a href="http://mobile.ant.design">Facilitators</a>
               </div>
-              <div>
-                <a href="http://ng.ant.design">NG-ZORRO</a>
-                <span>-</span>
-                Ant Design of Angular
-              </div>
+
               <div>
                 <a
                   target="_blank "
@@ -27,20 +23,19 @@
                 >Awesome Ant Design</a>
               </div>
               <div>
-                <a target="_blank " href="http://ant-design.gitee.io/">国内镜像站点 🇨🇳</a>
+                <a target="_blank " href="http://ant-design.gitee.io/">Math Deep Dive</a>
               </div>
             </div>
           </a-col>
           <a-col :lg="6" :sm="24" :xs="24">
             <div class="footer-center">
-              <h2 class="Txt-Primary">资源链接</h2>
+              <h2 class="Txt-Primary">Extra courses</h2>
               <div>
-                <a href="http://scaffold.ant.design">Scaffolds</a>
                 <span>-</span>
-                脚手架市场
+                Development
               </div>
               <div>
-                <a target="_blank" rel="noopener noreferrer" href="https://github.com/dvajs/dva">dva</a> - 应用框架
+               Math Resources
               </div>
               <div>
                 <a
@@ -48,7 +43,7 @@
                   rel="noopener noreferrer"
                   href="https://github.com/dvajs/dva-cli"
                 >dva-cli</a> -
-                开发工具
+                Language
               </div>
               <div>
                 <a
@@ -77,44 +72,44 @@
           </a-col>
           <a-col :lg="6" :sm="24" :xs="24">
             <div class="footer-center">
-              <h2 class="Txt-Primary">社区</h2>
+              <h2 class="Txt-Primary">Teaching Materials</h2>
               <div>
-                <a href="/changelog">更新记录</a>
+                <a href="/changelog">Why Math</a>
               </div>
               <div>
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
                   href="https://github.com/ant-design/ant-design/wiki/FAQ"
-                >常见问题</a>
+                >Wide Resourses</a>
               </div>
               <div>
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
                   href="https://gitter.im/ant-design/ant-design"
-                >在线讨论 (中文)</a>
+                >Math in Medecine</a>
               </div>
               <div>
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
                   href="https://gitter.im/ant-design/ant-design-english"
-                >在线讨论 (English)</a>
+                >Math in Physics</a>
               </div>
               <div>
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
                   href="http://new-issue.ant.design/"
-                >报告 Bug</a>
+                >Stronomy</a>
               </div>
               <div>
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
                   href="https://github.com/ant-design/ant-design/issues"
-                >讨论列表</a>
+                >Computing</a>
               </div>
               <div>
                 <a
@@ -140,17 +135,17 @@
                   src="/assets/logo.png"
                   alt
                 />
-                更多产品
+                4034 Students
               </h2>
               <div>
                 <a target="_blank" rel="noopener noreferrer" href="https://antv.alipay.com/">AntV</a>
                 <span>-</span>
-                数据可视化
+                Course Releasese
               </div>
               <div>
                 <a target="_blank" rel="noopener noreferrer" href="https://eggjs.org/">Egg</a>
                 <span>-</span>
-                企业级 Node 开发框架
+                Terms & Conditions
               </div>
             </div>
           </a-col>
@@ -159,24 +154,7 @@
       <Row class="bottom-bar">
         <a-col lg="{4}" sm="{24}" />
         <a-col lg="{20}" sm="{24}">
-          <span
-            style="line-height: '16px'; padding-right: 12; marginRight: 11; border-right: '1px solid rgba(255, 255, 255, 0.55)'"
-          >
-            <a
-              href="https://docs.alipay.com/policies/privacy/antfin"
-              rel="noopener noreferrer"
-              target="_blank"
-            >隐私权政策</a>
-          </span>
-          <span style="margin-ight: 24">
-            <a
-              href="https://render.alipay.com/p/f/fd-izto3cem/index.html"
-              rel="noopener noreferrer"
-              target="_blank"
-            >权益保障承诺书</a>
-          </span>
-          <span style="margin-right: 12px">ICP 证浙 B2-2-100257</span>
-          <span style="margin-right: 12px">Copyright © 蚂蚁金融服务集团</span>
+          <span style="margin-right: 12px">Copyright © Math Spectra</span>
         </a-col>
       </Row>
     </footer>
@@ -198,7 +176,7 @@ export default Vue.extend({});
 @padding-space: 144px;
 @site-text-color: #314659;
 footer.dark {
-  background-color: #000;
+  background-color: #001529;
   color: rgba(255, 255, 255, 0.65);
   a {
     color: rgba(255, 255, 255, 0.9);

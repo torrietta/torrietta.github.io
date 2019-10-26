@@ -16,14 +16,14 @@
       :style="{ lineHeight: '64px' }"
     >
       <a-menu-item :v-if="forOut !='true'" key="1">Home</a-menu-item>
-      <a-menu-item key="2">
+      <a-menu-item>
         <router-link to="/subjects">Subjects</router-link>
       </a-menu-item>
-      <a-menu-item :v-if="forOut !='true'" key="3">
-        <router-link to="/contact">Contact</router-link>
+      <a-menu-item>
+        <router-link to="/out/contact">Contact</router-link>
       </a-menu-item>
       <!--  -->
-      <a-sub-menu key="sub2">
+      <a-sub-menu v-if="!(forOut =='true')" key="sub2">
         <span slot="title">
           <span class="Menu-Account">
             <img class="Acc-Img" src="/assets/levels/undraw_reading_0re1.svg" />

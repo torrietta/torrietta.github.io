@@ -1,7 +1,7 @@
 <template>
   <div>
     <a-row type="flex" align="middle" justify="center">
-      <a-col :span="12" class="Out-Form-H">
+      <a-col :span="16"  :push="4" class="Out-Form-H">
         <a-form
           id="components-form-demo-normal-login"
           :form="form"
@@ -77,12 +77,12 @@ export default {
 .Out-Form-Info {
   h1 {
     font-size: 2rem;
-    font-weight: lighter;
+    font-weight: 400;
     text-align: center;
     color: #52e3b8;
   }
   p {
-    font-weight: lighter;
+    font-weight: 400;
     text-align: center;
   }
 }

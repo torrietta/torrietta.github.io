@@ -5,7 +5,7 @@
         <!--  -->
         <div>
           <div class="Quiz-Title">
-            <div>Quiz 1</div>
+            <div>Quiz 2</div>
           </div>
           <!--  -->
           <form class="Quiz-Q" id="quiz" name="quiz">
@@ -32,6 +32,7 @@
             <!--  -->
           </form>
           <div class="form-check">
+            <a-button type="primary">Submit</a-button>
             <div id="results"></div>
           </div>
         </div>
@@ -56,90 +57,86 @@ export default Vue.extend({
       },
       quiz: [
         {
-          text: "2 + 3 = ?",
+          text: "52 + ? = 100",
           answers: [
             {
-              label: 5,
-              value: 5
+              label: 48,
+              value: 48
             },
             {
-              label: 6,
-              value: 6
-            },
-            {
-              label: 1,
-              value: 1
+              label: 50,
+              value: 50
             }
           ],
-          answer: "5"
+          answer: 48
         },
         {
-          text: " 4 + 6 = ?",
+          text: "? + 477 = 600",
           answers: [
             {
-              label: 9,
-              value: 9
+              label: 33,
+              value: 33
             },
             {
-              label: 10,
-              value: 10
+              label: 133,
+              value: 133
             }
           ],
-          answer: "10"
+          answer: 133
         },
         {
-          text: " ? + 6 = 8?",
+          text: "80 + 90 = ?",
           answers: [
             {
-              label: 3,
-              value: 3
+              label: 170,
+              value: 170
             },
             {
-              label: 2,
-              value: 2
+              label: 150,
+              value: 150
             }
           ],
-          answer: "2"
+          answer: 170
         },
         {
-          text: "9 + ? = 16",
+          text: "25 + ? = 70",
           answers: [
             {
-              label: 8,
-              value: 8
+              label: 55,
+              value: 55
             },
             {
-              label: 9,
-              value: 9
+              label: 35,
+              value: 35
             },
             {
-              label: 7,
-              value: 7
+              label: 45,
+              value: 45
             }
           ],
-          answer: "7"
+          answer: 45
         },
         {
-          text: "7 + 9 = ?",
+          text: " ? + 45 = 302",
           answers: [
             {
-              label: 18,
-              value: 18
+              label: 257,
+              value: 257
             },
             {
-              label: 20,
-              value: 20
+              label: 207,
+              value: 207
             },
             {
-              label: 16,
-              value: 16
+              label: 157,
+              value: 157
             },
             {
-              label: 15,
-              value: 15
+              label: 247,
+              value: 247
             }
           ],
-          answer: 16
+          answer: 257
         }
       ]
     };
@@ -148,7 +145,7 @@ export default Vue.extend({
 });
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .Quiz-Page {
   background: #fff;
   border-radius: 4px;

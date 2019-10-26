@@ -8,7 +8,7 @@
         @submit="handleSubmit"
       >
         <div class="Out-Form-Info">
-          <h1>Log in back!</h1>
+          <h4>Log in back!</h4>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum voluptatum cumque illo ab repellat exercitationem obcaecati.</p>
         </div>
         <a-form-item>
@@ -72,14 +72,14 @@ export default {
 </script>
 <style lang="scss">
 .Out-Form-Info {
-  h1 {
-    font-size: 2rem;
-    font-weight: lighter;
+  h4 {
+    font-size: 1.5rem;
+    font-weight: 400;
     text-align: center;
     color: #52e3b8
   }
   p {
-    font-weight: lighter;
+    font-weight: 400;
     text-align: center;
   }
 }

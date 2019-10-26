@@ -8,7 +8,7 @@
         @submit="handleSubmit"
       >
         <div class="Out-Form-Info">
-          <h1>Create an account</h1>
+          <h4>Create an account</h4>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum voluptatum cumque illo ab repellat exercitationem obcaecati.</p>
         </div>
         <a-form-item>
